@@ -6,5 +6,5 @@ def main(a):
     Returns:
         bool: answer
     """
-    return 0<a and a<100
+    return 9<a and a<100
 print(main(25))
