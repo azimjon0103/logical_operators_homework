@@ -8,5 +8,8 @@ def main(n):
     Returns:
         bool: answer
     """
-
-    return
+    s1 = 0+1
+    s2 = 0
+     
+    return  s1 > s2
+print(main(1101))    
