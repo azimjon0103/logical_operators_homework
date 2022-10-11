@@ -8,8 +8,16 @@ def main(n):
     Returns:
         bool: answer
     """
-    s1 = 0+1
-    s2 = 0
-     
-    return  s1 > s2
-print(main(1101))    
+    x1=n%10
+    n=n//10
+    x2=n%10
+    n=n//10
+    x3=n%10
+    n=n//10
+    x4=n%10
+    n=n//10
+    x5=n%10
+    s1=5-(x1+x2+x3+x4+x5)
+    s2=x1+x2+x3+x4+x5
+    return  s1<s2
+print(main(11001))    
