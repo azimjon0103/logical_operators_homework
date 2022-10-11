@@ -8,6 +8,7 @@ def main(n):
     Returns:
         bool: answer
     """
+    9999<n<100000
     x1=n%10
     n=n//10
     x2=n%10
@@ -20,4 +21,4 @@ def main(n):
     s1=5-(x1+x2+x3+x4+x5)
     s2=x1+x2+x3+x4+x5
     return  s1<s2
-print(main(11001))    
+print(main(1001))    
