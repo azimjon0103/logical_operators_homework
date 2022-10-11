@@ -8,17 +8,26 @@ def main(n):
     Returns:
         bool: answer
     """
-    bl=9999<n and n<100000
+    s1=0
+    s2=0
     x1=n%10
+    s1+=x1==0
+    s2+=x1==1
     n=n//10
+
     x2=n%10
+    s1+=x2==0 and n!=0
+    s2+=x2==1
     n=n//10
+
     x3=n%10
+    s1+=x3==0 and n!=0
+    s2+=x3==1
     n=n//10
+    
     x4=n%10
+    s1+=x4==0 and n!=0
+    s2+=x4==1
     n=n//10
-    x5=n%10
-    s1=5-(x1+x2+x3+x4+x5)
-    s2=x1+x2+x3+x4+x5
-    return  s1<s2 and bl
-print(main(1001))    
+    return  s1>s2
+print(main(1011))    
