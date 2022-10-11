@@ -8,26 +8,26 @@ def main(n):
     Returns:
         bool: answer
     """
-    s1=0
-    s2=0
+    sun0=0
+    sun1=0
     x1=n%10
-    s1+=x1==0
-    s2+=x1==1
+    sun0+=x1==0
+    sun1+=x1==1
     n=n//10
 
     x2=n%10
-    s1+=x2==0 and n!=0
-    s2+=x2==1
+    sun0+=x2==0 and n!=0
+    sun1+=x2==1
     n=n//10
 
     x3=n%10
-    s1+=x3==0 and n!=0
-    s2+=x3==1
+    sun0+=x3==0 and n!=0
+    sun1+=x3==1
     n=n//10
-    
+
     x4=n%10
-    s1+=x4==0 and n!=0
-    s2+=x4==1
+    sun0+=x4==0 and n!=0
+    sun1+=x4==1
     n=n//10
-    return  s1>s2
+    return  sun1>sun0
 print(main(1011))    
