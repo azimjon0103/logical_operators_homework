@@ -8,4 +8,6 @@ def main(x):
     Returns:
         bool: answer
     """
-    return
+    
+    return 9<x and x<1000 and type(x)==type(1) and x%10==x//10
+print(main(22))    
